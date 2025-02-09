@@ -38,3 +38,4 @@ export default function CatFact() {
       </div>
     );
   }
+  /* like a function. one line of code is used to call Components */

@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import CatFact from "../components/CatFact";
+
 ---
 
 <html lang="en">
@@ -52,17 +52,12 @@ import CatFact from "../components/CatFact";
 			
 		</div>
 		<!-- <button class="bg-blue-100 rounded-md p-2 m-5 cursor-pointer variant-default">Generate Number</button> -->
-	</body>
-	<!-- Cat Fact  -->
-	<body>
 		<h1 class="font-bold text-3xl m-5">Backend Intro - Get a Cat Fact</h1>
-        <!-- This calls our React Component which needs to have 'client' load so that the request works in real time!
-         Try seeing what happens if you remove the client load-->
-        <button class="bg-blue-100 rounded-md p-2 m-5 cursor-pointer variant-default">Generate Cat Fact</button>
-		<CatFact client:load/>
+		<div>
+			<a class="button bg-blue-100 rounded-md p-2 m-5 cursor-pointer variant-default" href="/cats">Generate Cat Fact</a>
+		</div>
 		
 	</body>
-	<!-- Cat Fact   -->
 </html>
 
 <style>
@@ -75,5 +70,16 @@ import CatFact from "../components/CatFact";
 		height: 100px;
 		border: 1px solid black;
 		border-radius: 50%;
+	}
+	.button {
+		/* display: inline-block; */
+		padding: 0.5rem 1rem; /* rem - root element */
+		color: black;
+		border-radius: 0.5rem;
+		text-align: center;
+		text-decoration: none;
+	}
+	.button:hover {
+		background-color: #1e40af;
 	}
 </style>
