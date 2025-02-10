@@ -1,0 +1,43 @@
+---
+import "../styles/global.css";
+import "../layouts/Layout.astro";
+import header from "../components/header.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Dev Project</title>
+	</head>
+    <body>
+		<header></header>
+		
+		
+	</body>
+</html>
+
+<style>
+	.link {
+		color: blue;
+	}
+
+	.color {
+		width: 100px;
+		height: 100px;
+		border: 1px solid black;
+		border-radius: 50%;
+	}
+	.button {
+		/* display: inline-block; */
+		padding: 0.5rem 1rem; /* rem - root element */
+		color: black;
+		border-radius: 0.5rem;
+		text-align: center;
+		text-decoration: none;
+	}
+	.button:hover {
+		background-color: #1e40af;
+	}
+</style>
